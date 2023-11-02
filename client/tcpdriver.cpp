@@ -3,6 +3,7 @@
 #include "TCPClient.h"
 
 #define PORT 8080
+#define MAXLINE 1024
 
 int main(int argc, char* argv[]) {
     TCPClient client(PORT);
@@ -15,8 +16,8 @@ int main(int argc, char* argv[]) {
     printf("Message sent from client.\n");
 
     // Read message
-    char buffer[1024] = {0};
-    client.read(buffer, 1024);
+    char buffer[MAXLINE] = {0};
+    client.read(buffer, MAXLINE);
     printf("Received message: %s\n", buffer);
 
     return 0;

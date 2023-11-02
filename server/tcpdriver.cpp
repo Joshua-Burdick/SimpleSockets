@@ -3,7 +3,7 @@
 #include "TCPServer.h"
 
 #define PORT 8080
-#define TYPE UDP
+#define MAXLINE 1024
 
 int main(int argc, char* argv[]) {
     TCPServer server(PORT);
@@ -14,8 +14,8 @@ int main(int argc, char* argv[]) {
     server.accept();
 
     // Read messages
-    char buffer[1024] = {0};
-    server.read(buffer, 1024);
+    char buffer[MAXLINE] = {0};
+    server.read(buffer, MAXLINE);
     printf("Received message: %s\n", buffer);
 
     // Send message
