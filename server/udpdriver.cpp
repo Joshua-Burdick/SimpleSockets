@@ -16,7 +16,7 @@ int main() {
     server.bind();
 
 	server.read(buffer, MAXLINE);
-	printf("Client : %s\n", buffer);
+	printf("Client: %s\n", buffer);
 
 	server.send(hello, strlen(hello));
 	printf("Hello message sent.\n");

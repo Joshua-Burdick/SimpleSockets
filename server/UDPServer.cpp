@@ -14,7 +14,7 @@ UDPServer::UDPServer(int port) {
 
     this->servaddr.sin_family = AF_INET;
 	this->servaddr.sin_addr.s_addr = INADDR_ANY; 
-	this->servaddr.sin_port = htons(port);
+	this->servaddr.sin_port = htons(this->port);
 }
 
 UDPServer::UDPServer(const UDPServer& other) {
