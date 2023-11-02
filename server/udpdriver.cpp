@@ -11,9 +11,9 @@ int main() {
 	char buffer[MAXLINE]; 
 	const char *hello = "Hello from server"; 
 	
-    UDPServer server(PORT);
+    	UDPServer server(PORT);
 
-    server.bind();
+    	server.bind();
 
 	server.read(buffer, MAXLINE);
 	printf("Client: %s\n", buffer);
