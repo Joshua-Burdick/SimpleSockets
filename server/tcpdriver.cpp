@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cstring>
-#include "Server.h"
+#include "TCPServer.h"
 
 #define PORT 8080
 #define TYPE UDP

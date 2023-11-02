@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cstring>
-#include "Client.h"
+#include "TCPClient.h"
 
 #define PORT 8080
 

@@ -1,4 +1,4 @@
-#include "Client.h"
+#include "TCPClient.h"
 
 TCPClient::TCPClient(int port) {
     this->port = port;
