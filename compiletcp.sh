@@ -2,7 +2,7 @@
 
 # Compile the program
 cd server
-g++ -std=c++11 -o tcpserver tcpdriver.cpp TCPServer.cpp
+g++ -std=c++11 -o ../executables/tcpserver tcpdriver.cpp TCPServer.cpp
 
 cd ../client
-g++ -std=c++11 -o tcpclient tcpdriver.cpp TCPClient.cpp
+g++ -std=c++11 -o ../executables/tcpclient tcpdriver.cpp TCPClient.cpp
